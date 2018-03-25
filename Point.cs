@@ -7,20 +7,39 @@ namespace SeaBattle
     class Point
     {
         public int typeofpoint = 0;
+        public string stringofpoint = ".";
 
-        public void RenderPoint(Point point)
+        public void SetStringsForPoints(Point[,] points)
+        {
+            foreach (Point point in points)
+            {
+                if (typeofpoint == 0)
+                    stringofpoint = "."; // Empty
+
+                else if (typeofpoint == 1)
+                    stringofpoint = "*"; // Ship
+
+                else if (typeofpoint == 2)
+                    stringofpoint = "X"; // Damaged
+
+                else if (typeofpoint == 3)
+                    stringofpoint = "O"; // Miss
+            }
+        }
+
+        public void Shot()
         {
             if (typeofpoint == 0)
-                Console.Write("."); // Empty
+            {
+                stringofpoint = "O"; // Empty -> Miss
+                typeofpoint = 3;
+            }
 
             else if (typeofpoint == 1)
-                Console.Write("*"); // Ship
-
-            else if (typeofpoint == 2)
-                Console.Write("X"); // Damaged
-
-            else if (typeofpoint == 3)
-                Console.Write("O"); // Miss
+            {
+                stringofpoint = "X"; // Ship -> Damaged
+                typeofpoint = 2;
+            }
         }
     }
 }
