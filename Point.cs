@@ -31,14 +31,12 @@ namespace SeaBattle
         {
             if (typeofpoint == 0)
             {
-                stringofpoint = "O"; // Empty -> Miss
-                typeofpoint = 3;
+                typeofpoint = 3; // Empty -> Miss
             }
 
             else if (typeofpoint == 1)
             {
-                stringofpoint = "X"; // Ship -> Damaged
-                typeofpoint = 2;
+                typeofpoint = 2; // Ship -> Damaged
             }
         }
     }
