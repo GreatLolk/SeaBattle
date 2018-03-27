@@ -16,3 +16,8 @@ SB 0.3:
 * Optimized Point class;
 * Fixed mistake with strings in Render method;
 * Created Ships class.
+
+SB 0.4:
+* Created prototype Preparation() method;
+* Created overload method for CoorinatesToPoints();
+* Created private ChoosePositions() method.
