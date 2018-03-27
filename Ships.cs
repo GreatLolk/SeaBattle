@@ -14,7 +14,7 @@ namespace SeaBattle
             points = new Point[numberofdeck];
             foreach(Point point in points)
             {
-                point.typeofpoint = 1; // string = "*"
+                point.typeofpoint = 1; // string = "*" - Ship
             }
         }
 
