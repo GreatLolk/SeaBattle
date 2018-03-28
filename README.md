@@ -21,3 +21,8 @@ SB 0.4:
 * Created prototype Preparation() method;
 * Created overload method for CoorinatesToPoints();
 * Created private ChoosePositions() method.
+
+SB 0.5:
+* Created new class WinChecker;
+* Created CheckWin() method;
+* Created Win() method.
