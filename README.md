@@ -26,3 +26,6 @@ SB 0.5:
 * Created new class WinChecker;
 * Created CheckWin() method;
 * Created Win() method.
+
+SB 0.6:
+* Created attempt to ref Ships[] and Points[,].
