@@ -29,3 +29,6 @@ SB 0.5:
 
 SB 0.6:
 * Created attempt to ref Ships[] and Points[,].
+
+SB 0.7:
+* Created prototype Ref Ships[] and Points[.].
