@@ -148,12 +148,12 @@ namespace SeaBattle
                 switch(numberofships)
                 {
                     case 4:
-                        ships[pindex].points[0].typeofpoint = points[letter, number].typeofpoint; // ship0, ship1, ship2, ship3
+                        RefOfShipsAndPoints(ref ships[pindex].points[0], ref points[letter, number]); // ship0, ship1, ship2, ship3
                         pindex++;
                         break;
 
                     case 3:
-                        ships[pindex].points[pindex2].typeofpoint = points[letter, number].typeofpoint; // ship4, ship5, ship6
+                        RefOfShipsAndPoints(ref ships[pindex].points[pindex2], ref points[letter, number]); // ship4, ship5, ship6
                         if (pindex2 == 0)
                             pindex2 = 1;
                         else if (pindex2 == 1)
@@ -161,7 +161,7 @@ namespace SeaBattle
                         break;
 
                     case 2:
-                        ships[pindex].points[pindex2].typeofpoint = points[letter, number].typeofpoint; // ship7, ship8
+                        RefOfShipsAndPoints(ref ships[pindex].points[pindex2], ref points[letter, number]); // ship7, ship8
                         if (pindex2 == 0)
                             pindex2 = 1;
                         else if (pindex2 == 1)
@@ -171,12 +171,16 @@ namespace SeaBattle
                         break;
 
                     case 1:
-                        ships[pindex].points[pindex2].typeofpoint = points[letter, number].typeofpoint; // ship9
+                        RefOfShipsAndPoints(ref ships[pindex].points[pindex2], ref points[letter, number]); // ship9
                         pindex2++;
                         break;
                 }
             }
-            
+        }
+
+        private void RefOfShipsAndPoints(ref Point point1, ref Point point2)
+        {
+            point1 = point2;
         }
     }
 }
