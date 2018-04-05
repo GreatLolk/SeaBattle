@@ -32,3 +32,6 @@ SB 0.6:
 
 SB 0.7:
 * Created prototype Ref Ships[] and Points[.].
+
+SB 0.8
+* Created non-ready AI class.
