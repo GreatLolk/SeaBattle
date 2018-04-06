@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SeaBattle
-{
+ namespace SeaBattle
+ {
     class AI
     {
         private Random rnd = new Random();
@@ -24,33 +24,109 @@ namespace SeaBattle
                         points[coordinate1, coordinate2].typeofpoint = 3; // Miss
                         break;
 
-                    case 1:                                                                                                                                                                                                                                                                                                                                               // Empty                                                                                                                                                                          
-                        if (points[coordinate1 + 1, coordinate2].typeofpoint == 0 && coordinate1 + 1 != 11 && points[coordinate1 - 1, coordinate2].typeofpoint == 0 && coordinate1 - 1 != -1 && points[coordinate1, coordinate2 + 1].typeofpoint == 0 && coordinate2 + 1 != 11 && points[coordinate1, coordinate2 - 1].typeofpoint == 0 && coordinate2 - 1 != -1) // Empty -- Ship -- Empty
-                        {                                                                                                                                                                                                                                                                                                                                                 // Empty
+                    case 1:
+                        points[coordinate1, coordinate2].typeofpoint = 2; // Ship --> Damaged
+                                                                                                                                                                                                                                                                        // Empty
+                        if (points[coordinate1 + 1, coordinate2].typeofpoint == 0 && points[coordinate1 - 1, coordinate2].typeofpoint == 0 && points[coordinate1, coordinate2 + 1].typeofpoint == 0  && points[coordinate1, coordinate2 - 1].typeofpoint == 0) // Empty -- Ship -- Empty
+                        {                                                                                                                                                                                                                                               // Empty
                             break;
                         }
-
-                        else if (points[coordinate1 + 1, coordinate2].typeofpoint == 0 && coordinate1 + 1 != 11 || points[coordinate1 - 1, coordinate2].typeofpoint == 0 && coordinate1 - 1 != -1 || points[coordinate1, coordinate2 + 1].typeofpoint == 0 && coordinate2 + 1 != 11 || points[coordinate1, coordinate2 - 1].typeofpoint == 0 && coordinate2 - 1 != -1)
-                        {
-                            switch (rnd.Next(1, 4))
+                                                                                                                                                                                                                                                                             // ?Ship
+                        else if (points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1  || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 11) // ?Ship -- Ship -- ?Ship
+                        {                                            // ?Ship                                                                                                                                                                                                // ?Ship
+                            if(coordinate1 == 9 && coordinate2 == 0) // Ship -- ?Ship
                             {
-                                case 0:
-                                    if (coordinate1 != 11)
-                                    {
+                                switch (rnd.Next(1, 2))
+                                {
+                                    case 1:
+                                        if (points[coordinate1 + 1, coordinate2].typeofpoint == 0)
+                                            points[coordinate1 + 1, coordinate2].typeofpoint = 3;
+                                        else if(points[coordinate1 + 1, coordinate2].typeofpoint == 1)
+                                            points[coordinate1 + 1, coordinate2].typeofpoint = 2;
+                                        break;
 
-                                    }
-                                    break;
+                                    case 2:
+                                        if (points[coordinate1, coordinate2 + 1].typeofpoint == 0)
+                                            points[coordinate1, coordinate2 + 1].typeofpoint = 3;
+                                        else if (points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                            points[coordinate1, coordinate2 + 1].typeofpoint = 2;
+                                        break;
+
+                                }
+                            }
+
+                           else if(coordinate1 == 9 && coordinate2 == 9)
+                            {                                 // ?Ship
+                                switch(rnd.Next(1,2)) // ?Ship -- Ship
+                                {
+                                    case 1:
+                                        if (points[coordinate1 + 1, coordinate2].typeofpoint == 0)
+                                            points[coordinate1 + 1, coordinate2].typeofpoint = 3;
+                                        else if (points[coordinate1 + 1, coordinate2].typeofpoint == 1)
+                                            points[coordinate1 + 1, coordinate2].typeofpoint = 2;
+                                        break;
+
+                                    case 2:
+                                        if (points[coordinate1, coordinate2 - 1].typeofpoint == 0)
+                                            points[coordinate1, coordinate2 - 1].typeofpoint = 3;
+                                        else if (points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                            points[coordinate1, coordinate2 - 1].typeofpoint = 2;
+                                        break;
+                                }
+                            }
+
+                            else if(coordinate1 == 0 && coordinate2 == 0)
+                            {
+                                switch (rnd.Next(1, 2)) // Ship -- ?Ship
+                                {                       // ?Ship
+                                    case 1:
+                                        if (points[coordinate1 - 1, coordinate2].typeofpoint == 0)
+                                            points[coordinate1 - 1, coordinate2].typeofpoint = 3;
+                                        else if (points[coordinate1 - 1, coordinate2].typeofpoint == 1)
+                                            points[coordinate1 - 1, coordinate2].typeofpoint = 2;
+                                        break;
+
+                                    case 2:
+                                        if (points[coordinate1, coordinate2 + 1].typeofpoint == 0)
+                                            points[coordinate1, coordinate2 + 1].typeofpoint = 3;
+                                        else if (points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                            points[coordinate1, coordinate2 + 1].typeofpoint = 2;
+                                        break;
+
+                                }
+                            }
+
+                            else if(coordinate1 == 0 && coordinate2 == 9)
+                            {                           // ?Ship -- Ship
+                                switch (rnd.Next(1, 2)) //         ?Ship
+                                {
+                                    case 1:
+                                        if (points[coordinate1 - 1, coordinate2].typeofpoint == 0)
+                                            points[coordinate1 - 1, coordinate2].typeofpoint = 3;
+                                        else if (points[coordinate1 - 1, coordinate2].typeofpoint == 1)
+                                            points[coordinate1 - 1, coordinate2].typeofpoint = 2;
+                                        break;
+
+                                    case 2:
+                                        if (points[coordinate1, coordinate2 - 1].typeofpoint == 0)
+                                            points[coordinate1, coordinate2 - 1].typeofpoint = 3;
+                                        else if (points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                            points[coordinate1, coordinate2 - 1].typeofpoint = 2;
+                                        break;
+
+                                }
                             }
                         }
-
                         break;
-                }
-
+                      }
                 if (WasDamaged == true)
                     continue;
 
                 break;
             }
+
+                
         }
     }
 }
+
