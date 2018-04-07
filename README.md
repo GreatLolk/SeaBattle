@@ -36,5 +36,8 @@ SB 0.7:
 SB 0.8:
 * Created non-ready AI class.
 
-SB 0.9:
+SB 0.85:
 * Modified AI Class(added 25% of AIShoot() method).
+
+SB 0.9:
+* Ready AI class.
