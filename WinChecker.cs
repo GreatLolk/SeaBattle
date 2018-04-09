@@ -48,7 +48,7 @@ namespace SeaBattle
             if (IsWin == 1)
                 Console.WriteLine("1 PLAYER WINS!!!");
             else if (IsWin == 2)
-                Console.WriteLine("2 PLAYER WINS");
+                Console.WriteLine("2 PLAYER WINS!!!");
         }
     }
 }

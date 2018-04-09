@@ -7,7 +7,7 @@ namespace SeaBattle
     class Point
     {
         public int typeofpoint = 0;
-        public string stringofpoint = ".";
+        public string stringofpoint  = ".";
 
         public void SetStringsForPoints(Point[,] points)
         {

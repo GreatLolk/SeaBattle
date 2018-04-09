@@ -8,9 +8,8 @@ namespace SeaBattle
     {
         public Point[] points;
 
-        public Ships(Point[] points, int numberofdeck) // Creating ship
+        public Ships(int numberofdeck) // Creating ship
         {
-            this.points = points;
             points = new Point[numberofdeck];
             foreach(Point point in points)
             {
