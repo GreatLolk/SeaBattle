@@ -41,3 +41,8 @@ SB 0.85:
 
 SB 0.9:
 * Ready AI class.
+
+SB 0.91:
+* Began creating Main() method;
+* Changed Ships class constructor.
+
