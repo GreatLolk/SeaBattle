@@ -45,6 +45,7 @@ namespace SeaBattle
             PlayerInput playerinput1 = new PlayerInput(); // Adding PlayerInput-module.
 
             playerinput1.Preparation(AIpoints, AIships);
+
         }
     }
 }
