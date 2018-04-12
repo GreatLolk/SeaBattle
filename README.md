@@ -46,5 +46,8 @@ SB 0.91:
 * Began creating Main() method;
 * Changed Ships class constructor.
 
-* SB 0.92
+SB 0.92:
 * Began creating AIPreparation() method.
+
+SB 0.93:
+* Ready 70% AIPreparation() method.
