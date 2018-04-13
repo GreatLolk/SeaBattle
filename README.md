@@ -51,3 +51,8 @@ SB 0.92:
 
 SB 0.93:
 * Ready 70% AIPreparation() method.
+
+SB 0.94:
+* Ready 80% AIPreparation() method:
+  1) Added creating 3 deckships;
+  2) Added checking typeofpoint for ships.
