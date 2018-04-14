@@ -9,7 +9,7 @@ SB 0.1:
 SB 0.2:
 * Ready GetPlayerInput method;
 * Ready Renderer method, but it need design editing;
-* Ready prototype megtod Shot;
+* Ready prototype method Shot;
 * Changed method SetStingsForPoints.
 
 SB 0.3:
@@ -56,3 +56,8 @@ SB 0.94:
 * Ready 80% AIPreparation() method:
   1) Added creating 3 deckships;
   2) Added checking typeofpoint for ships.
+
+SB 0.95:
+* Ready 90% AIPreparation() method:
+   
+   a) Added creating 4 deckships.
