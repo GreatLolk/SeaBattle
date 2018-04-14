@@ -905,8 +905,176 @@ using System.Text;
 
                     else if (shipsdecks == 4)
                     {
+                        int index = 9;
 
-                    }
+                        coordinate1 = rnd.Next(0, 9);
+                        coordinate2 = rnd.Next(0, 9);
+
+                        if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                        {
+                            continue;
+                        }
+
+                        if(coordinate1 == 1)
+                        {
+                            points[coordinate1, coordinate2].typeofpoint = 1;
+                            RefOfShipsAndPoints(ref points[coordinate1, coordinate2], ref ships[index].points[0]);
+                            
+                            switch(rnd.Next(1,2))
+                            {
+                                case 1:
+                                points[coordinate1 - 1, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
+                                points[coordinate1 - 2, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
+                                points[coordinate1 - 3, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 - 3, coordinate2], ref ships[index].points[3]);
+                                break;
+
+                                case 2:
+                                if(coordinate2 == 7 || coordinate2 == 8 || coordinate2 == 9)
+                                {
+                                    points[coordinate1 - 1, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
+                                    points[coordinate1 - 2, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
+                                    points[coordinate1 - 3, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 - 3, coordinate2], ref ships[index].points[3]);
+                                }
+
+                                else
+                                {
+                                    points[coordinate1, coordinate2 + 1].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 1], ref ships[index].points[1]);
+                                    points[coordinate1, coordinate2 + 2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 2], ref ships[index].points[2]);
+                                    points[coordinate1, coordinate2 + 3].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 3], ref ships[index].points[3]);
+                                }
+                                break;
+                            }
+                        }
+
+                        else if (coordinate1 == 9)
+                        {
+                            points[coordinate1, coordinate2].typeofpoint = 1;
+                            RefOfShipsAndPoints(ref points[coordinate1, coordinate2], ref ships[index].points[0]);
+
+                            switch (rnd.Next(1, 2))
+                            {
+                                case 1:
+                                    points[coordinate1 + 1, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 + 1, coordinate2], ref ships[index].points[1]);
+                                    points[coordinate1 + 2, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 + 2, coordinate2], ref ships[index].points[2]);
+                                    points[coordinate1 + 3, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 + 3, coordinate2], ref ships[index].points[3]);
+                                    break;
+
+                                case 2:
+                                    if (coordinate2 == 7 || coordinate2 == 8 || coordinate2 == 9)
+                                    {
+                                        points[coordinate1 + 1, coordinate2].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1 + 1, coordinate2], ref ships[index].points[1]);
+                                        points[coordinate1 + 2, coordinate2].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1 + 2, coordinate2], ref ships[index].points[2]);
+                                        points[coordinate1 + 3, coordinate2].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1 + 3, coordinate2], ref ships[index].points[3]);
+                                    }
+
+                                    else
+                                    {
+                                        points[coordinate1, coordinate2 + 1].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 1], ref ships[index].points[1]);
+                                        points[coordinate1, coordinate2 + 2].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 2], ref ships[index].points[2]);
+                                        points[coordinate1, coordinate2 + 3].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 3], ref ships[index].points[3]);
+                                    }
+                                    break;
+                            }
+                        }
+
+                        else if (coordinate2 == 0)
+                        {
+                            points[coordinate1, coordinate2].typeofpoint = 1;
+                            RefOfShipsAndPoints(ref points[coordinate1, coordinate2], ref ships[index].points[0]);
+
+                            switch (rnd.Next(1, 2))
+                            {
+                                case 1:
+                                    points[coordinate1, coordinate2 + 1].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 1], ref ships[index].points[1]);
+                                    points[coordinate1, coordinate2 + 2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 2], ref ships[index].points[2]);
+                                    points[coordinate1, coordinate2 + 3].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 3], ref ships[index].points[3]);
+                                    break;
+
+                                case 2:
+                                    if (coordinate1 == 7 || coordinate1 == 8 || coordinate1 == 9)
+                                    {
+                                        points[coordinate1, coordinate2 + 1].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 1], ref ships[index].points[1]);
+                                        points[coordinate1, coordinate2 + 2].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 2], ref ships[index].points[2]);
+                                        points[coordinate1, coordinate2 + 3].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 3], ref ships[index].points[3]);
+                                    }
+
+                                    else
+                                    {
+                                        points[coordinate1 - 1, coordinate2].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
+                                        points[coordinate1 - 2, coordinate2].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
+                                        points[coordinate1 - 3, coordinate2].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1 - 3, coordinate2], ref ships[index].points[3]);
+                                    }
+                                    break;
+                            }
+                        }
+
+                        else if (coordinate2 == 9)
+                        {
+                            points[coordinate1, coordinate2].typeofpoint = 1;
+                            RefOfShipsAndPoints(ref points[coordinate1, coordinate2], ref ships[index].points[0]);
+
+                            switch (rnd.Next(1, 2))
+                            {
+                                case 1:
+                                    points[coordinate1, coordinate2 - 1].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1, coordinate2 - 1], ref ships[index].points[1]);
+                                    points[coordinate1, coordinate2 - 2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1, coordinate2 - 2], ref ships[index].points[2]);
+                                    points[coordinate1, coordinate2 - 3].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1, coordinate2 - 3], ref ships[index].points[3]);
+                                    break;
+
+                                case 2:
+                                    if (coordinate1 == 7 || coordinate1 == 8 || coordinate1 == 9)
+                                    {
+                                        points[coordinate1, coordinate2 - 1].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1, coordinate2 - 1], ref ships[index].points[1]);
+                                        points[coordinate1, coordinate2 - 2].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1, coordinate2 - 2], ref ships[index].points[2]);
+                                        points[coordinate1, coordinate2 - 3].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1, coordinate2 - 3], ref ships[index].points[3]);
+                                    }
+
+                                    else
+                                    {
+                                        points[coordinate1 - 1, coordinate2].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
+                                        points[coordinate1 - 2, coordinate2].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
+                                        points[coordinate1 - 3, coordinate2].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1 - 3, coordinate2], ref ships[index].points[3]);
+                                    }
+                                    break;
+                            }
+                        }
+                }
             }
         }
 
