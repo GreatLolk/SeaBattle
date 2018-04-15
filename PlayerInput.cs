@@ -13,13 +13,13 @@ namespace SeaBattle
 
         public void Preparation(Point[,] points, Ships[] ships) // Set positions for the ships
         {
-            Console.WriteLine("Choose the positions for 4 1-deck ships. Write 4 coordinates like this:'A1,A2,A3,A4'.");
+            Console.WriteLine("Choose the positions for 4 1-deck ships. Write 4 coordinates like this:\"A1,A2,A3,A4\".");
             ChoosePositions(points, ships, 4);
-            Console.WriteLine("Choose the positions for 3 2-deck ships. Write 6 coordinates like this:'A1,A2,A3,A4'.");
+            Console.WriteLine("Choose the positions for 3 2-deck ships. Write 6 coordinates like this:\"A1,A2,A3,A4\".");
             ChoosePositions(points, ships, 3);
-            Console.WriteLine("Choose the positions for 2 3-deck ships. Write 6 coordinates like this:'A1,A2,A3,A4'.");
+            Console.WriteLine("Choose the positions for 2 3-deck ships. Write 6 coordinates like this:\"A1,A2,A3,A4\".");
             ChoosePositions(points, ships, 2);
-            Console.WriteLine("Choose the positions for 1 4-deck ships. Write 4 coordinates like this:'A1,A2,A3,A4'.");
+            Console.WriteLine("Choose the positions for 1 4-deck ships. Write 4 coordinates like this:\"A1,A2,A3,A4\".");
             ChoosePositions(points, ships, 1);
         }
 

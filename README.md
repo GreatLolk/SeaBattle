@@ -61,3 +61,7 @@ SB 0.95:
 * Ready 90% AIPreparation() method:
    
    a) Added creating 4 deckships.
+   
+SB 0.96:
+* Ready AIPreparation() method;
+* Corrected Preparation() method's output.
