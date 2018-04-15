@@ -64,4 +64,4 @@ SB 0.95:
    
 SB 0.96:
 * Ready AIPreparation() method;
-* Corrected Renderer's output.
+* Corrected Preparation() method's output.
