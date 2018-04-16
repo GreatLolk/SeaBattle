@@ -43,8 +43,14 @@ namespace SeaBattle
             AIships[9] = new Ships(4);
 
             PlayerInput playerinput1 = new PlayerInput(); // Adding PlayerInput-module.
+            AI ai1 = new AI(); // Adding AI-module.
+            Renderer renderer1 = new Renderer(); // Adding Renderer-module
 
-            playerinput1.Preparation(AIpoints, AIships);
+            playerinput1.Preparation(playerpoints, playersships); // Creating ships for player.
+            ai1.AIPreparation(AIpoints, AIships); // Creating ships for AI.
+
+            renderer1.Render(playerpoints);
+            renderer1.Render(AIpoints);
 
         }
     }
