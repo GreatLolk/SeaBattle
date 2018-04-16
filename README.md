@@ -65,3 +65,7 @@ SB 0.95:
 SB 0.96:
 * Ready AIPreparation() method;
 * Corrected Preparation() method's output.
+
+SB 0.97:
+* Fixed Ships class constructor;
+* Ready 30% Main method(). 
