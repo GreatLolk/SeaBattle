@@ -69,3 +69,6 @@ SB 0.96:
 SB 0.97:
 * Fixed Ships class constructor;
 * Ready 30% Main method(). 
+
+SB 0.98:
+* Changed checking of typeofpoint in AIPreparation() method.
