@@ -384,9 +384,96 @@ using System.Text;
                         coordinate1 = rnd.Next(0, 9);
                         coordinate2 = rnd.Next(0, 9);
 
-                        if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                        if (coordinate1 == 0)
                         {
-                            continue;
+                            if (coordinate2 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate2 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
+                        else if (coordinate1 == 9)
+                        {
+                            if (coordinate2 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate2 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
+                        else if (coordinate2 == 0)
+                        {
+                            if (coordinate1 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate1 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
+                        else if(coordinate2 == 9)
+                        {
+                            if (coordinate1 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate1 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
+                        else
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                            {
+                                continue;
+                            }
                         }
 
                         points[coordinate1, coordinate2].typeofpoint = 1; // Empty --> Ship
@@ -403,14 +490,101 @@ using System.Text;
                         coordinate1 = rnd.Next(0, 9);
                         coordinate2 = rnd.Next(0, 9);
 
-                        if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                        if (coordinate1 == 0)
                         {
-                            continue;
+                            if (coordinate2 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate2 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
+                        else if (coordinate1 == 9)
+                        {
+                            if (coordinate2 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate2 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
+                        else if (coordinate2 == 0)
+                        {
+                            if (coordinate1 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate1 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
+                        else if (coordinate2 == 9)
+                        {
+                            if (coordinate1 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate1 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
+                        else
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                            {
+                                continue;
+                            }
                         }
 
                         // ----        
                         if (coordinate1 == 0) // Ship   OR  Ship -- Ship
-                        {                 // Ship
+                        {                     // Ship
                             switch (rnd.Next(1, 2))
                             {
                                 case 1:
@@ -573,9 +747,96 @@ using System.Text;
                         coordinate1 = rnd.Next(0, 9);
                         coordinate2 = rnd.Next(0, 9);
 
-                        if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                        if (coordinate1 == 0)
                         {
-                            continue;
+                            if (coordinate2 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate2 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
+                        else if (coordinate1 == 9)
+                        {
+                            if (coordinate2 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate2 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
+                        else if (coordinate2 == 0)
+                        {
+                            if (coordinate1 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate1 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
+                        else if (coordinate2 == 9)
+                        {
+                            if (coordinate1 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate1 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
+                        else
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                            {
+                                continue;
+                            }
                         }
 
                         // ---- 
@@ -910,9 +1171,96 @@ using System.Text;
                     coordinate1 = rnd.Next(0, 9);
                     coordinate2 = rnd.Next(0, 9);
 
-                    if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                    if (coordinate1 == 0)
                     {
-                        continue;
+                        if (coordinate2 == 0)
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                continue;
+                        }
+
+                        else if (coordinate2 == 9)
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                continue;
+                        }
+
+                        else
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                continue;
+                        }
+                    }
+
+                    else if (coordinate1 == 9)
+                    {
+                        if (coordinate2 == 0)
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                continue;
+                        }
+
+                        else if (coordinate2 == 9)
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                continue;
+                        }
+
+                        else
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                continue;
+                        }
+                    }
+
+                    else if (coordinate2 == 0)
+                    {
+                        if (coordinate1 == 0)
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                continue;
+                        }
+
+                        else if (coordinate1 == 9)
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                continue;
+                        }
+
+                        else
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1)
+                                continue;
+                        }
+                    }
+
+                    else if (coordinate2 == 9)
+                    {
+                        if (coordinate1 == 0)
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                continue;
+                        }
+
+                        else if (coordinate1 == 9)
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                continue;
+                        }
+
+                        else
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1)
+                                continue;
+                        }
+                    }
+
+                    else
+                    {
+                        if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                        {
+                            continue;
+                        }
                     }
 
                     if (coordinate1 == 1)
