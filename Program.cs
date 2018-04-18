@@ -49,8 +49,13 @@ namespace SeaBattle
             playerinput1.Preparation(playerpoints, playersships); // Creating ships for player.
             ai1.AIPreparation(AIpoints, AIships); // Creating ships for AI.
 
+            Point.SetStringsForPoints(AIpoints);
+            Point.SetStringsForPoints(playerpoints);
+
             renderer1.Render(playerpoints);
             renderer1.Render(AIpoints);
+
+            Console.ReadKey();
 
         }
     }

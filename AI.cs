@@ -388,27 +388,6 @@ using System.Text;
                         {
                             if (coordinate2 == 0)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
-                                    continue;
-                            }
-
-                            else if (coordinate2 == 9)
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                    continue;
-                            }
-
-                            else
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                    continue;
-                            }
-                        }
-
-                        else if (coordinate1 == 9)
-                        {
-                            if (coordinate2 == 0)
-                            {
                                 if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
                                     continue;
                             }
@@ -426,11 +405,32 @@ using System.Text;
                             }
                         }
 
+                        else if (coordinate1 == 9)
+                        {
+                            if (coordinate2 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate2 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
                         else if (coordinate2 == 0)
                         {
                             if (coordinate1 == 0)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
                                     continue;
                             }
 
@@ -451,7 +451,7 @@ using System.Text;
                         {
                             if (coordinate1 == 0)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
                                     continue;
                             }
 
@@ -494,27 +494,6 @@ using System.Text;
                         {
                             if (coordinate2 == 0)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
-                                    continue;
-                            }
-
-                            else if (coordinate2 == 9)
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                    continue;
-                            }
-
-                            else
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                    continue;
-                            }
-                        }
-
-                        else if (coordinate1 == 9)
-                        {
-                            if (coordinate2 == 0)
-                            {
                                 if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
                                     continue;
                             }
@@ -532,11 +511,32 @@ using System.Text;
                             }
                         }
 
+                        else if (coordinate1 == 9)
+                        {
+                            if (coordinate2 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate2 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
                         else if (coordinate2 == 0)
                         {
                             if (coordinate1 == 0)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
                                     continue;
                             }
 
@@ -557,7 +557,7 @@ using System.Text;
                         {
                             if (coordinate1 == 0)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
                                     continue;
                             }
 
@@ -751,27 +751,6 @@ using System.Text;
                         {
                             if (coordinate2 == 0)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
-                                    continue;
-                            }
-
-                            else if (coordinate2 == 9)
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                    continue;
-                            }
-
-                            else
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                    continue;
-                            }
-                        }
-
-                        else if (coordinate1 == 9)
-                        {
-                            if (coordinate2 == 0)
-                            {
                                 if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
                                     continue;
                             }
@@ -789,11 +768,32 @@ using System.Text;
                             }
                         }
 
+                        else if (coordinate1 == 9)
+                        {
+                            if (coordinate2 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else if (coordinate2 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                    continue;
+                            }
+                        }
+
                         else if (coordinate2 == 0)
                         {
                             if (coordinate1 == 0)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
                                     continue;
                             }
 
@@ -814,7 +814,7 @@ using System.Text;
                         {
                             if (coordinate1 == 0)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
                                     continue;
                             }
 
@@ -932,9 +932,9 @@ using System.Text;
 
                                     else
                                     {
-                                        points[coordinate1 - 1, coordinate2].typeofpoint = 1;
+                                        points[coordinate1 + 1, coordinate2].typeofpoint = 1;
                                         RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
-                                        points[coordinate1 - 2, coordinate2].typeofpoint = 1;
+                                        points[coordinate1 + 2, coordinate2].typeofpoint = 1;
                                         RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
                                     }
                                     break;
@@ -1028,18 +1028,18 @@ using System.Text;
                             switch (rnd.Next(1, 2))
                             {
                                 case 1:
-                                    points[coordinate1 - 1, coordinate2].typeofpoint = 1;
+                                    points[coordinate1 + 1, coordinate2].typeofpoint = 1;
                                     RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
-                                    points[coordinate1 - 2, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
+                                    points[coordinate1 + 2, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 + 2, coordinate2], ref ships[index].points[2]);
                                     break;
 
                                 case 2:
                                     if (coordinate2 == 8)
                                     {
-                                        points[coordinate1 - 1, coordinate2].typeofpoint = 1;
+                                        points[coordinate1 + 1, coordinate2].typeofpoint = 1;
                                         RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
-                                        points[coordinate1 - 2, coordinate2].typeofpoint = 1;
+                                        points[coordinate1 + 2, coordinate2].typeofpoint = 1;
                                         RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2 + 1], ref ships[index].points[2]);
                                     }
 
@@ -1047,8 +1047,8 @@ using System.Text;
                                     {
                                         points[coordinate1, coordinate2 + 1].typeofpoint = 1;
                                         RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 1], ref ships[index].points[1]);
-                                        points[coordinate1 + 2, coordinate2].typeofpoint = 1;
-                                        RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 1], ref ships[index].points[2]);
+                                        points[coordinate1, coordinate2 + 2].typeofpoint = 1;
+                                        RefOfShipsAndPoints(ref points[coordinate1, coordinate2 + 2], ref ships[index].points[2]);
                                     }
                                     break;
                             }
@@ -1063,18 +1063,18 @@ using System.Text;
                             switch (rnd.Next(1, 2))
                             {
                                 case 1:
-                                    points[coordinate1 + 1, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 + 1, coordinate2], ref ships[index].points[1]);
-                                    points[coordinate1 + 2, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 + 2, coordinate2], ref ships[index].points[2]);
+                                    points[coordinate1 - 1, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
+                                    points[coordinate1 - 2, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
                                     break;
 
                                 case 2:
                                     if (coordinate2 == 8)
                                     {
-                                        points[coordinate1 + 1, coordinate2].typeofpoint = 1;
+                                        points[coordinate1 - 1, coordinate2].typeofpoint = 1;
                                         RefOfShipsAndPoints(ref points[coordinate1 + 1, coordinate2], ref ships[index].points[1]);
-                                        points[coordinate1 + 2, coordinate2].typeofpoint = 1;
+                                        points[coordinate1 - 2, coordinate2].typeofpoint = 1;
                                         RefOfShipsAndPoints(ref points[coordinate1 + 1, coordinate2], ref ships[index].points[2]);
                                     }
 
@@ -1175,27 +1175,6 @@ using System.Text;
                     {
                         if (coordinate2 == 0)
                         {
-                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
-                                continue;
-                        }
-
-                        else if (coordinate2 == 9)
-                        {
-                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                continue;
-                        }
-
-                        else
-                        {
-                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                continue;
-                        }
-                    }
-
-                    else if (coordinate1 == 9)
-                    {
-                        if (coordinate2 == 0)
-                        {
                             if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
                                 continue;
                         }
@@ -1213,11 +1192,32 @@ using System.Text;
                         }
                     }
 
+                    else if (coordinate1 == 9)
+                    {
+                        if (coordinate2 == 0)
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                continue;
+                        }
+
+                        else if (coordinate2 == 9)
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                continue;
+                        }
+
+                        else
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                continue;
+                        }
+                    }
+
                     else if (coordinate2 == 0)
                     {
                         if (coordinate1 == 0)
                         {
-                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
                                 continue;
                         }
 
@@ -1238,7 +1238,7 @@ using System.Text;
                     {
                         if (coordinate1 == 0)
                         {
-                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
                                 continue;
                         }
 
@@ -1271,23 +1271,23 @@ using System.Text;
                         switch (rnd.Next(1, 2))
                         {
                             case 1:
-                                points[coordinate1 - 1, coordinate2].typeofpoint = 1;
-                                RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
-                                points[coordinate1 - 2, coordinate2].typeofpoint = 1;
-                                RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
-                                points[coordinate1 - 3, coordinate2].typeofpoint = 1;
-                                RefOfShipsAndPoints(ref points[coordinate1 - 3, coordinate2], ref ships[index].points[3]);
+                                points[coordinate1 + 1, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 + 1, coordinate2], ref ships[index].points[1]);
+                                points[coordinate1 + 2, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 + 2, coordinate2], ref ships[index].points[2]);
+                                points[coordinate1 + 3, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 + 3, coordinate2], ref ships[index].points[3]);
                                 break;
 
                             case 2:
                                 if (coordinate2 == 7 || coordinate2 == 8 || coordinate2 == 9)
                                 {
-                                    points[coordinate1 - 1, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
-                                    points[coordinate1 - 2, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
-                                    points[coordinate1 - 3, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 - 3, coordinate2], ref ships[index].points[3]);
+                                    points[coordinate1 + 1, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 + 1, coordinate2], ref ships[index].points[1]);
+                                    points[coordinate1 + 2, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 + 2, coordinate2], ref ships[index].points[2]);
+                                    points[coordinate1 + 3, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 + 3, coordinate2], ref ships[index].points[3]);
                                 }
 
                                 else
@@ -1516,23 +1516,23 @@ using System.Text;
                         switch (rnd.Next(1, 2))
                         {
                             case 1:
-                                points[coordinate1 - 1, coordinate2].typeofpoint = 1;
-                                RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
-                                points[coordinate1 - 2, coordinate2].typeofpoint = 1;
-                                RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
-                                points[coordinate1 - 3, coordinate2].typeofpoint = 1;
-                                RefOfShipsAndPoints(ref points[coordinate1 - 3, coordinate2], ref ships[index].points[3]);
+                                points[coordinate1 + 1, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 + 1, coordinate2], ref ships[index].points[1]);
+                                points[coordinate1 + 2, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 + 2, coordinate2], ref ships[index].points[2]);
+                                points[coordinate1 + 3, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 + 3, coordinate2], ref ships[index].points[3]);
                                 break;
 
                             case 2:
                                 if (coordinate2 == 7 || coordinate2 == 8 || coordinate2 == 9)
                                 {
-                                    points[coordinate1 - 1, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
-                                    points[coordinate1 - 2, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
-                                    points[coordinate1 - 3, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 - 3, coordinate2], ref ships[index].points[3]);
+                                    points[coordinate1 + 1, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 + 1, coordinate2], ref ships[index].points[1]);
+                                    points[coordinate1 + 2, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 + 2, coordinate2], ref ships[index].points[2]);
+                                    points[coordinate1 + 3, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 + 3, coordinate2], ref ships[index].points[3]);
                                 }
 
                                 else
@@ -1556,23 +1556,23 @@ using System.Text;
                         switch (rnd.Next(1, 2))
                         {
                             case 1:
-                                points[coordinate1 + 1, coordinate2].typeofpoint = 1;
-                                RefOfShipsAndPoints(ref points[coordinate1 + 1, coordinate2], ref ships[index].points[1]);
-                                points[coordinate1 + 2, coordinate2].typeofpoint = 1;
-                                RefOfShipsAndPoints(ref points[coordinate1 + 2, coordinate2], ref ships[index].points[2]);
-                                points[coordinate1 + 3, coordinate2].typeofpoint = 1;
-                                RefOfShipsAndPoints(ref points[coordinate1 + 3, coordinate2], ref ships[index].points[3]);
+                                points[coordinate1 - 1, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
+                                points[coordinate1 - 2, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
+                                points[coordinate1 - 3, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 - 3, coordinate2], ref ships[index].points[3]);
                                 break;
 
                             case 2:
                                 if (coordinate2 == 7 || coordinate2 == 8 || coordinate2 == 9)
                                 {
-                                    points[coordinate1 + 1, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 + 1, coordinate2], ref ships[index].points[1]);
-                                    points[coordinate1 + 2, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 + 2, coordinate2], ref ships[index].points[2]);
-                                    points[coordinate1 + 3, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 + 3, coordinate2], ref ships[index].points[3]);
+                                    points[coordinate1 - 1, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
+                                    points[coordinate1 - 2, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
+                                    points[coordinate1 - 3, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 - 3, coordinate2], ref ships[index].points[3]);
                                 }
 
                                 else
@@ -1596,23 +1596,23 @@ using System.Text;
                         switch (rnd.Next(1, 2))
                         {
                             case 1:
-                                points[coordinate1 + 1, coordinate2].typeofpoint = 1;
-                                RefOfShipsAndPoints(ref points[coordinate1 + 1, coordinate2], ref ships[index].points[1]);
-                                points[coordinate1 + 2, coordinate2].typeofpoint = 1;
-                                RefOfShipsAndPoints(ref points[coordinate1 + 2, coordinate2], ref ships[index].points[2]);
-                                points[coordinate1 + 3, coordinate2].typeofpoint = 1;
-                                RefOfShipsAndPoints(ref points[coordinate1 + 3, coordinate2], ref ships[index].points[3]);
+                                points[coordinate1 - 1, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
+                                points[coordinate1 - 2, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
+                                points[coordinate1 - 3, coordinate2].typeofpoint = 1;
+                                RefOfShipsAndPoints(ref points[coordinate1 - 3, coordinate2], ref ships[index].points[3]);
                                 break;
 
                             case 2:
                                 if (coordinate2 == 7 || coordinate2 == 8 || coordinate2 == 9)
                                 {
-                                    points[coordinate1 + 1, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 + 1, coordinate2], ref ships[index].points[1]);
-                                    points[coordinate1 + 2, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 + 2, coordinate2], ref ships[index].points[2]);
-                                    points[coordinate1 + 3, coordinate2].typeofpoint = 1;
-                                    RefOfShipsAndPoints(ref points[coordinate1 + 3, coordinate2], ref ships[index].points[3]);
+                                    points[coordinate1 - 1, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 - 1, coordinate2], ref ships[index].points[1]);
+                                    points[coordinate1 - 2, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 - 2, coordinate2], ref ships[index].points[2]);
+                                    points[coordinate1 - 3, coordinate2].typeofpoint = 1;
+                                    RefOfShipsAndPoints(ref points[coordinate1 - 3, coordinate2], ref ships[index].points[3]);
                                 }
 
                                 else

@@ -72,3 +72,9 @@ SB 0.97:
 
 SB 0.98:
 * Changed checking of typeofpoint in AIPreparation() method.
+
+SB 0.985:
+* Fixed bugs in AI Class;
+* Fixed bugs in PlayerInput Class;
+* Began editing Renderer class;
+* Ready 35% Main method();
