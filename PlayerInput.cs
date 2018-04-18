@@ -68,7 +68,40 @@ namespace SeaBattle
                     letter = 9;
                     break;
             }
-            number = Convert.ToInt32(playeranswers[1]); // points[,number]
+
+            switch (Convert.ToInt32(playeranswer[1])) // points[,number]
+            {
+                case 1:
+                    number = 0;
+                    break;
+                case 2:
+                    number = 1;
+                    break;
+                case 3:
+                    number = 2;
+                    break;
+                case 4:
+                    number = 3;
+                    break;
+                case 5:
+                    number = 4;
+                    break;
+                case 6:
+                    number = 5;
+                    break;
+                case 7:
+                    number = 6;
+                    break;
+                case 8:
+                    number = 7;
+                    break;
+                case 9:
+                    number = 8;
+                    break;
+                case 10:
+                    number = 9;
+                    break;
+            }
         }
 
         private void CoordinatesToPoint(char[] charsofanswers) // Read input and convert them in point.
@@ -106,7 +139,40 @@ namespace SeaBattle
                     letter = 9;
                     break;
             }
-            number = Convert.ToInt32(charsofanswers[1]); // points[,number]
+
+            switch(Convert.ToInt32(charsofanswers[1])) // points[,number]
+            {
+                case 1:
+                    number = 0;
+                    break;
+                case 2:
+                    number = 1;
+                    break;
+                case 3:
+                    number = 2;
+                    break;
+                case 4:
+                    number = 3;
+                    break;
+                case 5:
+                    number = 4;
+                    break;
+                case 6:
+                    number = 5;
+                    break;
+                case 7:
+                    number = 6;
+                    break;
+                case 8:
+                    number = 7;
+                    break;
+                case 9:
+                    number = 8;
+                    break;
+                case 10:
+                    number = 9;
+                    break;
+            }
         }
 
         private void ChoosePositions(Point[,] points, Ships[] ships, int numberofships)
@@ -120,7 +186,7 @@ namespace SeaBattle
                     pindex = 0;
                     break;
 
-                case 5:
+                case 3:
                     pindex = 4;
                     pindex2 = 0;
                     break;
@@ -166,7 +232,7 @@ namespace SeaBattle
                             pindex2 = 1;
                         else if (pindex2 == 1)
                             pindex2 = 2;
-                        else if (pindex2 == 2)
+                        else if (pindex2 == 2 && pindex == 7)
                             pindex++;
                         break;
 

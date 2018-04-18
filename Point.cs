@@ -9,21 +9,21 @@ namespace SeaBattle
         public int typeofpoint = 0;
         public string stringofpoint  = ".";
 
-        public void SetStringsForPoints(Point[,] points)
+        public static void SetStringsForPoints(Point[,] points)
         {
             foreach (Point point in points)
             {
-                if (typeofpoint == 0)
-                    stringofpoint = "."; // Empty
+                if (point.typeofpoint == 0)
+                    point.stringofpoint = "."; // Empty
 
-                else if (typeofpoint == 1)
-                    stringofpoint = "*"; // Ship
+                else if (point.typeofpoint == 1)
+                    point.stringofpoint = "*"; // Ship
 
-                else if (typeofpoint == 2)
-                    stringofpoint = "X"; // Damaged
+                else if (point.typeofpoint == 2)
+                    point.stringofpoint = "X"; // Damaged
 
-                else if (typeofpoint == 3)
-                    stringofpoint = "O"; // Miss
+                else if (point.typeofpoint == 3)
+                    point.stringofpoint = "O"; // Miss
             }
         }
 
