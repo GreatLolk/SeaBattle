@@ -10,6 +10,7 @@ namespace SeaBattle
         private int number;
         private string playeranswer;
         private string[] playeranswers;
+        private bool WasDamaged = false;
 
         public void Preparation(Point[,] points, Ships[] ships) // Set positions for the ships
         {
@@ -23,14 +24,24 @@ namespace SeaBattle
             ChoosePositions(points, ships, 1);
         }
 
-        public void GetPlayerInput(Point[,] points)
+        public void GetPlayerInput(Point[,] points, Point[,] pointsforview)
         {
-            Console.WriteLine("Write coordinates for your shoot. (Letter, number)");
-            playeranswer = Console.ReadLine();
-            playeranswers = playeranswer.Split(',');
-            CoordinatesToPoint(playeranswers);
-            points[letter, number].Shot();
-            
+            do
+            {
+                Console.WriteLine("Write coordinates for your shoot. (Letter, number)");
+                playeranswer = Console.ReadLine();
+                playeranswers = playeranswer.Split(',');
+                CoordinatesToPoint(playeranswers);
+                points[letter, number].Shot();
+                pointsforview[letter, number].typeofpoint = points[letter, number].typeofpoint;
+
+                if (points[letter, number].typeofpoint == 2) // Ship --> Damaged
+                    WasDamaged = true;
+
+                else if (points[letter, number].typeofpoint == 3) // Empty --> Miss
+                    WasDamaged = false;
+
+            } while (WasDamaged == true);
         }
 
         private void CoordinatesToPoint(string[] playeranswers) // Read input and convert them in point.
@@ -182,21 +193,21 @@ namespace SeaBattle
 
             switch(numberofships)
             {
-                case 4:
+                case 4: // 4 1-deck ships
                     pindex = 0;
                     break;
 
-                case 3:
+                case 3: // 3 2-deck ships
                     pindex = 4;
                     pindex2 = 0;
                     break;
 
-                case 2:
+                case 2: // 2 3-deck ships
                     pindex = 7;
                     pindex2 = 0;
                     break;
 
-                case 1:
+                case 1: // 1 4-deck ship
                     pindex = 9;
                     pindex2 = 0;
                     break;
