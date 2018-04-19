@@ -82,4 +82,5 @@ SB 0.985:
 SB 0.987:
 * Changed realisation Shot() method for reusing;
 * Created new Point[,] massive for view player's action;
+* Added many comments;
 * Ready 40% Main method().
