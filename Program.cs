@@ -8,6 +8,7 @@ namespace SeaBattle
         {
             Point[,] playerpoints = new Point[10, 10];
             Point[,] AIpoints = new Point[10, 10];
+            Point[,] AIpointsForView = new Point[10, 10];
             Ships[] playersships = new Ships[10];
             Ships[] AIships = new Ships[10];
 
@@ -17,10 +18,11 @@ namespace SeaBattle
                 {
                     playerpoints[index, index2] = new Point();
                     AIpoints[index, index2] = new Point();
+                    AIpointsForView[index, index2] = new Point();
                 }
             }
 
-            playersships[0] = new Ships(1); // Ships in AIships[].
+            playersships[0] = new Ships(1); // Ships in playerships[].
             playersships[1] = new Ships(1);
             playersships[2] = new Ships(1);
             playersships[3] = new Ships(1);
@@ -49,11 +51,11 @@ namespace SeaBattle
             playerinput1.Preparation(playerpoints, playersships); // Creating ships for player.
             ai1.AIPreparation(AIpoints, AIships); // Creating ships for AI.
 
-            Point.SetStringsForPoints(AIpoints);
+            Point.SetStringsForPoints(AIpointsForView);
             Point.SetStringsForPoints(playerpoints);
 
             renderer1.Render(playerpoints);
-            renderer1.Render(AIpoints);
+            renderer1.Render(AIpointsForView);
 
             Console.ReadKey();
 
