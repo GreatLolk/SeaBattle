@@ -84,3 +84,6 @@ SB 0.987:
 * Created new Point[,] massive for view player's action;
 * Added many comments;
 * Ready 40% Main method().
+
+SB 0.99:
+* Ready 90% Main method().
