@@ -7,7 +7,7 @@ namespace SeaBattle
     class WinChecker
     {
         public int PlayerStep { get; set; } = 0; // 1 - first player's step, 2 - second player's step
-        private int IsWin = 0; // 1 - first player's win, 2 - second player's win
+        public int IsWin = 0; // 1 - first player's win, 2 - second player's win
         private bool IsDesrtoyed;
 
         public void CheckWin(Ships[] ships)
