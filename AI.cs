@@ -12,7 +12,7 @@ using System.Text;
         private bool WasDamaged = false;
         private int shipsdecks = 1;
 
-        public void AIShot(Point[,] points)
+        public void AIShot(Point[,] points, Point[,] aipointsforview)
         {
             while (true)
             {
@@ -364,6 +364,13 @@ using System.Text;
                         }
                         break;
                       }
+                // Render
+                Console.Clear();
+                Point.SetStringsForPoints(points);
+                Renderer.Render(points);
+                Renderer.Render(aipointsforview);
+                //
+
                 if (WasDamaged == true)
                     continue;
 

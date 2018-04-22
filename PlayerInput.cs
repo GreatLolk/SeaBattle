@@ -24,16 +24,23 @@ namespace SeaBattle
             ChoosePositions(points, ships, 1);
         }
 
-        public void GetPlayerInput(Point[,] points, Point[,] pointsforview)
+        public void GetPlayerInput(Point[,] points, Point[,] pointsforview, Point[,] playerpoints)
         {
             do
             {
-                Console.WriteLine("Write coordinates for your shoot. (Letter, number)");
+                Console.WriteLine("Write coordinates for your shoot. (Letter,number)");
                 playeranswer = Console.ReadLine();
-                playeranswers = playeranswer.Split(',');
+                playeranswers = playeranswer.Split(",");
                 CoordinatesToPoint(playeranswers);
                 points[letter, number].Shot();
                 pointsforview[letter, number].typeofpoint = points[letter, number].typeofpoint;
+
+                // Render
+                Console.Clear();
+                Point.SetStringsForPoints(pointsforview);
+                Renderer.Render(playerpoints);
+                Renderer.Render(pointsforview);
+                //
 
                 if (points[letter, number].typeofpoint == 2) // Ship --> Damaged
                     WasDamaged = true;
@@ -115,9 +122,9 @@ namespace SeaBattle
             }
         }
 
-        private void CoordinatesToPoint(char[] charsofanswers) // Read input and convert them in point.
+        private void CoordinatesToPoint(string playeranswer) // Read input and convert them in point.
         {
-            switch (charsofanswers[0]) // points[letter,]
+            switch (playeranswer[0]) // points[letter,]
             {
                 case 'A':
                     letter = 0;
@@ -151,36 +158,36 @@ namespace SeaBattle
                     break;
             }
 
-            switch(Convert.ToInt32(charsofanswers[1])) // points[,number]
+            switch(playeranswer[1]) // points[,number]
             {
-                case 1:
+                case '1':
                     number = 0;
                     break;
-                case 2:
+                case '2':
                     number = 1;
                     break;
-                case 3:
+                case '3':
                     number = 2;
                     break;
-                case 4:
+                case '4':
                     number = 3;
                     break;
-                case 5:
+                case '5':
                     number = 4;
                     break;
-                case 6:
+                case '6':
                     number = 5;
                     break;
-                case 7:
+                case '7':
                     number = 6;
                     break;
-                case 8:
+                case '8':
                     number = 7;
                     break;
-                case 9:
+                case '9':
                     number = 8;
                     break;
-                case 10:
+                case '10':
                     number = 9;
                     break;
             }
@@ -215,11 +222,10 @@ namespace SeaBattle
             }
             
             string answer = Console.ReadLine(); // A1,A2,A3
-            string[] answers = answer.Split(','); // {A1}, {A2}, {A3}
+            string[] answers = answer.Split(","); // {A1}, {A2}, {A3}
             for (int index = 0; index < answers.Length; index++)
             {
-                char[] charsofanswers = answers[index].ToCharArray(); // {A}, {1}
-                CoordinatesToPoint(charsofanswers);
+                CoordinatesToPoint(answers[index]); // {A}, {1} !!! Don't work - letter and number = 0 !!!
                 points[letter, number].typeofpoint = 1;
 
                 switch(numberofships)
