@@ -87,3 +87,7 @@ SB 0.987:
 
 SB 0.99:
 * Ready 90% Main method().
+
+SB 0.991:
+* Added render methods in AIShot() and GetPlayerInput();
+* Changed realisation of overloaded CoordinatesToPoint() method.

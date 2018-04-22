@@ -46,7 +46,6 @@ namespace SeaBattle
 
             PlayerInput playerinput1 = new PlayerInput(); // Adding PlayerInput-module.
             AI ai1 = new AI(); // Adding AI-module.
-            Renderer renderer1 = new Renderer(); // Adding Renderer-module
             WinChecker winchecker1 = new WinChecker(); // Adding WinChecker-module.
 
             playerinput1.Preparation(playerpoints, playersships); // Creating ships for player.
@@ -55,23 +54,23 @@ namespace SeaBattle
             Point.SetStringsForPoints(AIpointsForView);
             Point.SetStringsForPoints(playerpoints);
 
-            renderer1.Render(playerpoints);
-            renderer1.Render(AIpointsForView);
+            Renderer.Render(playerpoints);
+            Renderer.Render(AIpointsForView);
 
             while(winchecker1.IsWin == 0)
             {
-                ai1.AIShot(playerpoints); // AI's step.
-                winchecker1.PlayerStep = 2;
-                winchecker1.CheckWin(playersships);
+                playerinput1.GetPlayerInput(AIpoints, AIpointsForView, playerpoints); // Player's step.
+                winchecker1.PlayerStep = 1;
+                winchecker1.CheckWin(AIships);
 
                 if(winchecker1.IsWin != 0)
                 {
                     break;
                 }
 
-                playerinput1.GetPlayerInput(AIpoints, AIpointsForView); // Player's step.
-                winchecker1.PlayerStep = 1;
-                winchecker1.CheckWin(AIships);
+                ai1.AIShot(playerpoints, AIpointsForView); // AI's step.
+                winchecker1.PlayerStep = 2;
+                winchecker1.CheckWin(playersships);
             }
 
             winchecker1.Win();

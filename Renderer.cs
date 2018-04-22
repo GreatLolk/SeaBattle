@@ -6,7 +6,7 @@ namespace SeaBattle
 {
     class Renderer
     {
-        public void Render(Point[,] points)
+        public static void Render(Point[,] points)
         {
             Console.WriteLine("        A    B    C    D    E   F    G    H   I    J "); // 1 string
             Console.WriteLine("----+------+------+------+------+------+------+------+------+------+------+"); // 2 stirng
