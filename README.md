@@ -91,3 +91,8 @@ SB 0.99:
 SB 0.991:
 * Added render methods in AIShot() and GetPlayerInput();
 * Changed realisation of overloaded CoordinatesToPoint() method.
+
+SB 0.992:
+* Fixed problem with zero valuses;
+* Fixed problem with "10" input;
+* Added Thread.Sleep() for comfortable game.
