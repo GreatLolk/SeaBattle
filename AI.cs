@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
  namespace SeaBattle
  {
@@ -364,6 +365,10 @@ using System.Text;
                         }
                         break;
                       }
+
+                Console.WriteLine("Enemy turn.");
+                Thread.Sleep(2000);
+
                 // Render
                 Console.Clear();
                 Point.SetStringsForPoints(points);

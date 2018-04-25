@@ -28,6 +28,7 @@ namespace SeaBattle
         {
             do
             {
+                Console.WriteLine("Your turn:");
                 Console.WriteLine("Write coordinates for your shoot. (Letter,number)");
                 playeranswer = Console.ReadLine();
                 playeranswers = playeranswer.Split(",");
@@ -158,38 +159,43 @@ namespace SeaBattle
                     break;
             }
 
-            switch(playeranswer[1]) // points[,number]
+            if (playeranswer.Length == 3)
             {
-                case '1':
-                    number = 0;
-                    break;
-                case '2':
-                    number = 1;
-                    break;
-                case '3':
-                    number = 2;
-                    break;
-                case '4':
-                    number = 3;
-                    break;
-                case '5':
-                    number = 4;
-                    break;
-                case '6':
-                    number = 5;
-                    break;
-                case '7':
-                    number = 6;
-                    break;
-                case '8':
-                    number = 7;
-                    break;
-                case '9':
-                    number = 8;
-                    break;
-                case '10':
-                    number = 9;
-                    break;
+                number = 9;
+            }
+
+            else
+            {
+                switch (playeranswer[1]) // points[,number]
+                {
+                    case '1':
+                        number = 0;
+                        break;
+                    case '2':
+                        number = 1;
+                        break;
+                    case '3':
+                        number = 2;
+                        break;
+                    case '4':
+                        number = 3;
+                        break;
+                    case '5':
+                        number = 4;
+                        break;
+                    case '6':
+                        number = 5;
+                        break;
+                    case '7':
+                        number = 6;
+                        break;
+                    case '8':
+                        number = 7;
+                        break;
+                    case '9':
+                        number = 8;
+                        break;
+                }
             }
         }
 
@@ -225,7 +231,7 @@ namespace SeaBattle
             string[] answers = answer.Split(","); // {A1}, {A2}, {A3}
             for (int index = 0; index < answers.Length; index++)
             {
-                CoordinatesToPoint(answers[index]); // {A}, {1} !!! Don't work - letter and number = 0 !!!
+                CoordinatesToPoint(answers[index]);
                 points[letter, number].typeofpoint = 1;
 
                 switch(numberofships)

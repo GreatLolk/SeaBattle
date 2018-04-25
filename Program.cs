@@ -12,15 +12,7 @@ namespace SeaBattle
             Ships[] playersships = new Ships[10];
             Ships[] AIships = new Ships[10];
 
-            for(int index = 0; index < 10; index++) // Points in points[]
-            {
-                for(int index2 = 0; index2 < 10; index2++)
-                {
-                    playerpoints[index, index2] = new Point();
-                    AIpoints[index, index2] = new Point();
-                    AIpointsForView[index, index2] = new Point();
-                }
-            }
+            PointsInPoints(playerpoints, AIpoints, AIpointsForView);
 
             playersships[0] = new Ships(1); // Ships in playerships[].
             playersships[1] = new Ships(1);
@@ -76,6 +68,19 @@ namespace SeaBattle
             winchecker1.Win();
 
             Console.ReadKey();
+        }
+
+        public static void PointsInPoints(Point[,] points1, Point[,] points2, Point[,] points3)
+        {
+            for (int index = 0; index < 10; index++) // Points in points[]
+            {
+                for (int index2 = 0; index2 < 10; index2++)
+                {
+                    points1[index, index2] = new Point();
+                    points2[index, index2] = new Point();
+                    points3[index, index2] = new Point();
+                }
+            }
         }
     }
 }
