@@ -96,3 +96,6 @@ SB 0.992:
 * Fixed problem with zero valuses;
 * Fixed problem with "10" input;
 * Added Thread.Sleep() for comfortable game.
+
+SB 0.993:
+* Fixed bug with not correct reading input in CoordinatesToPoint(string[] playeranswers).
