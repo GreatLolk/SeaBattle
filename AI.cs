@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
- namespace SeaBattle
- {
+namespace SeaBattle
+{
     class AI
     {
         private Random rnd = new Random();
@@ -17,30 +17,130 @@ using System.Threading;
         {
             while (true)
             {
-                if (WasDamaged == false)
+                if (WasDamaged == false) // CHOOSE NEW TARGET
                 {
                     coordinate1 = rnd.Next(0, 9);
                     coordinate2 = rnd.Next(0, 9);
                 }
-            
+
                 switch (points[coordinate1, coordinate2].typeofpoint)
                 {
                     case 0: // Empty
-                        points[coordinate1, coordinate2].typeofpoint = 3; // Miss
+                        points[coordinate1, coordinate2].typeofpoint = 3; // Empty --> Miss
                         WasDamaged = false;
                         break;
 
-                    case 1:
+                    case 1: // Ship
                         points[coordinate1, coordinate2].typeofpoint = 2; // Ship --> Damaged
                         WasDamaged = false;
-                                                                                                                                                                                                                                                                        // Empty
-                        if (points[coordinate1 + 1, coordinate2].typeofpoint == 0 && points[coordinate1 - 1, coordinate2].typeofpoint == 0 && points[coordinate1, coordinate2 + 1].typeofpoint == 0  && points[coordinate1, coordinate2 - 1].typeofpoint == 0) // Empty -- Ship -- Empty
-                        {                                                                                                                                                                                                                                               // Empty
-                            break;
+
+                        Console.WriteLine("Enemy turn.");
+                        Thread.Sleep(2000);
+
+                        // Render
+                        Console.Clear();
+                        Point.SetStringsForPoints(points);
+                        Renderer.Render(points);
+                        Renderer.Render(aipointsforview);
+                        //
+
+                        // CHECKING EMPTY POINTS --> CONTINUE SHOOT or CHOOSE NEW TARGET
+                        if (coordinate1 == 0)
+                        {
+                            if (coordinate2 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 0 || points[coordinate1 + 1, coordinate2].typeofpoint == 0 || points[coordinate1, coordinate2 + 1].typeofpoint == 0)
+                                    continue; // CHOOSE NEW TARGET
+                            }
+
+                            else if (coordinate2 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 0 || points[coordinate1 + 1, coordinate2].typeofpoint == 0 || points[coordinate1, coordinate2 - 1].typeofpoint == 0)
+                                    continue; // CHOOSE NEW TARGET
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 0 || points[coordinate1 + 1, coordinate2].typeofpoint == 0 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 0)
+                                    continue; // CHOOSE NEW TARGET
+                            }
                         }
-                                                                                                                                                                                                                                                                             // ?Ship
-                        else if (points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1  || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1) // ?Ship -- Ship -- ?Ship
-                        {                                            // ?Ship                                                                                                                                                                                                // ?Ship
+
+                        else if (coordinate1 == 9)
+                        {
+                            if (coordinate2 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 0 || points[coordinate1 - 1, coordinate2].typeofpoint == 0 || points[coordinate1, coordinate2 + 1].typeofpoint == 0)
+                                    continue; // CHOOSE NEW TARGET
+                            }
+
+                            else if (coordinate2 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 0 || points[coordinate1 - 1, coordinate2].typeofpoint == 0 || points[coordinate1, coordinate2 - 1].typeofpoint == 0)
+                                    continue; // CHOOSE NEW TARGET
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 0 || points[coordinate1 - 1, coordinate2].typeofpoint == 0 || points[coordinate1, coordinate2 + 1].typeofpoint == 0 || points[coordinate1, coordinate2 - 1].typeofpoint == 0)
+                                    continue; // CHOOSE NEW TARGET
+                            }
+                        }
+
+                        else if (coordinate2 == 0)
+                        {
+                            if (coordinate1 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 0 || points[coordinate1 + 1, coordinate2].typeofpoint == 0 || points[coordinate1, coordinate2 + 1].typeofpoint == 0)
+                                    continue; // CHOOSE NEW TARGET
+                            }
+
+                            else if (coordinate1 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 0 || points[coordinate1 + 1, coordinate2].typeofpoint == 0 || points[coordinate1, coordinate2 + 1].typeofpoint == 0)
+                                    continue; // CHOOSE NEW TARGET
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 0 || points[coordinate1 + 1, coordinate2].typeofpoint == 0 || points[coordinate1, coordinate2 + 1].typeofpoint == 0 || points[coordinate1 - 1, coordinate2].typeofpoint == 0)
+                                    continue; // CHOOSE NEW TARGET
+                            }
+                        }
+
+                        else if (coordinate2 == 9)
+                        {
+                            if (coordinate1 == 0)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 0 || points[coordinate1 + 1, coordinate2].typeofpoint == 0 || points[coordinate1, coordinate2 - 1].typeofpoint == 0)
+                                    continue; // CHOOSE NEW TARGET
+                            }
+
+                            else if (coordinate1 == 9)
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 0 || points[coordinate1 + 1, coordinate2].typeofpoint == 0 || points[coordinate1, coordinate2 - 1].typeofpoint == 0)
+                                    continue; // CHOOSE NEW TARGET
+                            }
+
+                            else
+                            {
+                                if (points[coordinate1, coordinate2].typeofpoint == 0 || points[coordinate1 + 1, coordinate2].typeofpoint == 0 || points[coordinate1, coordinate2 - 1].typeofpoint == 0 || points[coordinate1 - 1, coordinate2].typeofpoint == 0)
+                                    continue; // CHOOSE NEW TARGET
+                            }
+                        }
+
+                        else if(coordinate1 != 0 && coordinate1 != 9 && coordinate2 != 0 && coordinate2 != 9)
+                        {
+                            if (points[coordinate1, coordinate2].typeofpoint == 0 || points[coordinate1 + 1, coordinate2].typeofpoint == 0 || points[coordinate1 - 1, coordinate2].typeofpoint == 0 || points[coordinate1, coordinate2 + 1].typeofpoint == 0 || points[coordinate1, coordinate2 - 1].typeofpoint == 0)
+                            {
+                                continue; // CHOOSE NEW TARGET
+                            }
+                        }
+                        //CHECKING EMPTY POINTS --> CONTINUE SHOOT or CHOOSE NEW TARGET 
+                        
+                        // CONTINUE SHOOT --> WHERE SHOOT?
+
+                                                                     // ?Ship                                                                                                                                                                                                
                             if(coordinate1 == 9 && coordinate2 == 0) // Ship -- ?Ship
                             {
                                 switch (rnd.Next(1, 2))
@@ -360,11 +460,16 @@ using System.Threading;
                                             WasDamaged = true;
                                         }
                                         break;
+                                    }
                                 }
-                            }
-                        }
-                        break;
-                      }
+
+                        // CONTINUE SHOOT --> WHERE SHOOT?
+
+                            break;
+                }
+                        
+                        
+                      
 
                 Console.WriteLine("Enemy turn.");
                 Thread.Sleep(2000);
@@ -380,9 +485,9 @@ using System.Threading;
                     continue;
 
                 break;
+            
+            
             }
-
-                
         }
 
         public void AIPreparation(Point[,] points, Ships[] ships)
