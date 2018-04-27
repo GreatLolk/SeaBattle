@@ -99,3 +99,7 @@ SB 0.992:
 
 SB 0.993:
 * Fixed bug with not correct reading input in CoordinatesToPoint(string[] playeranswers).
+
+SB 0.994 "AI CAN GOOD SHOOT":
+* Changed and extended system for simulation of AI's knowledge about ships status;
+* Added comments for more readable code.
