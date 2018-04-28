@@ -504,91 +504,91 @@ namespace SeaBattle
                         if (coordinate1 == 0)
                         {
                             if (coordinate2 == 0)
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
-                                    continue;
+                            {                                                                                                                                                                                                                                         // _______________
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 + 1].typeofpoint == 1) // |Ship -- ?Ship
+                                    continue;                                                                                                                                                                                                                         // |?Ship -- ?Ship
                             }
 
                             else if (coordinate2 == 9)
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                    continue;
+                            {                                                                                                                                                                                                                                         // _______________
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 - 1].typeofpoint == 1) // ?Ship --  Ship|
+                                    continue;                                                                                                                                                                                                                         // ?Ship -- ?Ship|
                             }
 
                             else
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                    continue;
+                            {                                                                                                                                                                                                                                                                                                                                                               // _______________________
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 - 1].typeofpoint == 1) // ?Ship -- Ship -- ?Ship
+                                    continue;                                                                                                                                                                                                                                                                                                                                               // ?Ship -- ?Ship -- ?Ship
                             }
                         }
 
                         else if (coordinate1 == 9)
                         {
                             if (coordinate2 == 0)
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
-                                    continue;
+                            {                                                                                                                                                                                                                                         // |?Ship -- ?Ship
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 + 1].typeofpoint == 1) // |Ship -- ?Ship
+                                    continue;                                                                                                                                                                                                                         // ===============
                             }
 
                             else if (coordinate2 == 9)
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                    continue;
+                            {                                                                                                                                                                                                                                         // ?Ship -- ?Ship|
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 - 1].typeofpoint == 1) // ?Ship --  Ship|
+                                    continue;                                                                                                                                                                                                                         // ===============
                             }
 
                             else
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                    continue;
+                            {                                                                                                                                                                                                                                                                                                                                                               // ?Ship -- ?Ship -- ?Ship
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 - 1].typeofpoint == 1) // ?Ship -- Ship -- ?Ship
+                                    continue;                                                                                                                                                                                                                                                                                                                                               // =======================
                             }
                         }
 
                         else if (coordinate2 == 0)
                         {
                             if (coordinate1 == 0)
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
-                                    continue;
+                            {                                                                                                                                                                                                                                         // _______________
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 + 1].typeofpoint == 1) // |Ship -- ?Ship
+                                    continue;                                                                                                                                                                                                                         // |?Ship -- ?Ship
                             }
 
                             else if (coordinate1 == 9)
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
-                                    continue;
+                            {                                                                                                                                                                                                                                         // |?Ship -- ?Ship
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 + 1].typeofpoint == 1) // |Ship --  ?Ship
+                                    continue;                                                                                                                                                                                                                         // ===============
                             }
 
                             else
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1)
-                                    continue;
+                            {                                                                                                                                                                                                                                                                                                                                                               // |?Ship -- ?Ship
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 + 1].typeofpoint == 1) // | Ship -- ?Ship
+                                    continue;                                                                                                                                                                                                                                                                                                                                               // |?Ship -- ?Ship
                             }
                         }
 
                         else if(coordinate2 == 9)
                         {
                             if (coordinate1 == 0)
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                    continue;
+                            {                                                                                                                                                                                                                                         // _______________
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 - 1].typeofpoint == 1) // ?Ship --  Ship|
+                                    continue;                                                                                                                                                                                                                         // ?Ship -- ?Ship|
                             }
 
                             else if (coordinate1 == 9)
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                                    continue;
+                            {                                                                                                                                                                                                                                         // ?Ship -- ?Ship|
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 - 1].typeofpoint == 1) // ?Ship --  Ship|
+                                    continue;                                                                                                                                                                                                                         // ===============
                             }
 
                             else
-                            {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1)
-                                    continue;
+                            {                                                                                                                                                                                                                                                                                                                                                               // ?Ship -- ?Ship|
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 - 1].typeofpoint == 1) // ?SHip --  Ship|
+                                    continue;                                                                                                                                                                                                                                                                                                                                               // ?Ship -- ?Ship|
                             }
                         }
 
                         else
-                        {
-                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
-                            {
+                        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  // ?Ship -- ?Ship -- ?Ship 
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 - 1].typeofpoint == 1) // ?Ship --  Ship -- ?Ship
+                            {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              // ?Ship -- ?Ship -- ?Ship
                                 continue;
                             }
                         }
@@ -611,19 +611,19 @@ namespace SeaBattle
                         {
                             if (coordinate2 == 0)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 + 2, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 + 2].typeofpoint == 1 || points[coordinate1 + 2, coordinate2 + 2].typeofpoint == 1 || points[coordinate1 + 2, coordinate2 + 1].typeofpoint == 1)
                                     continue;
                             }
 
                             else if (coordinate2 == 9)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 - 1].typeofpoint == 1)
                                     continue;
                             }
 
                             else
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 - 1].typeofpoint == 1)
                                     continue;
                             }
                         }
@@ -632,19 +632,19 @@ namespace SeaBattle
                         {
                             if (coordinate2 == 0)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 + 1].typeofpoint == 1)
                                     continue;
                             }
 
                             else if (coordinate2 == 9)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 - 1].typeofpoint == 1)
                                     continue;
                             }
 
                             else
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 - 1].typeofpoint == 1)
                                     continue;
                             }
                         }
@@ -653,19 +653,19 @@ namespace SeaBattle
                         {
                             if (coordinate1 == 0)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 + 1].typeofpoint == 1)
                                     continue;
                             }
 
                             else if (coordinate1 == 9)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 + 1].typeofpoint == 1)
                                     continue;
                             }
 
                             else
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 + 1].typeofpoint == 1)
                                     continue;
                             }
                         }
@@ -674,32 +674,32 @@ namespace SeaBattle
                         {
                             if (coordinate1 == 0)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 - 1].typeofpoint == 1)
                                     continue;
                             }
 
                             else if (coordinate1 == 9)
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 - 1].typeofpoint == 1)
                                     continue;
                             }
 
                             else
                             {
-                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1)
+                                if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 - 1].typeofpoint == 1)
                                     continue;
                             }
                         }
 
                         else
                         {
-                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1)
+                            if (points[coordinate1, coordinate2].typeofpoint == 1 || points[coordinate1 + 1, coordinate2].typeofpoint == 1 || points[coordinate1 - 1, coordinate2].typeofpoint == 1 || points[coordinate1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 + 1, coordinate2 - 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 + 1].typeofpoint == 1 || points[coordinate1 - 1, coordinate2 - 1].typeofpoint == 1)
                             {
                                 continue;
                             }
                         }
 
-                        // ----        
+                                              // ----        
                         if (coordinate1 == 0) // Ship   OR  Ship -- Ship
                         {                     // Ship
                             switch (rnd.Next(1, 2))
@@ -729,7 +729,7 @@ namespace SeaBattle
                                     break;
                             }
                         }
-                        // Ship
+                                                   // Ship
                         else if (coordinate1 == 9) // Ship   OR Ship -- Ships
                         {                          // ----
                             switch (rnd.Next(1, 2))
@@ -759,7 +759,7 @@ namespace SeaBattle
                                     break;
                             }
                         }
-                        // | Ship
+                                                   // | Ship
                         else if (coordinate2 == 0) // | Ship   OR | Ship -- Ship
                         {
                             switch (rnd.Next(1, 2))
@@ -791,7 +791,7 @@ namespace SeaBattle
                             }
                         }
 
-                        //  Ship |
+                                                   //  Ship |
                         else if (coordinate2 == 9) //  Ship |  OR  Ship -- Ship |
                         {
                             switch (rnd.Next(1, 2))
