@@ -103,3 +103,7 @@ SB 0.993:
 SB 0.994 "AI CAN GOOD SHOOT":
 * Changed and extended system for simulation of AI's knowledge about ships status;
 * Added comments for more readable code.
+
+SB 0.995 "1-deck ships - good ships":
+* Ready algorithm for creating 1-deck ships;
+* Began creating algorithm for creating 2-deck ships.
