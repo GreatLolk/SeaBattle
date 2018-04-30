@@ -107,3 +107,6 @@ SB 0.994 "AI CAN GOOD SHOOT":
 SB 0.995 "1-deck ships - good ships":
 * Ready algorithm for creating 1-deck ships;
 * Began creating algorithm for creating 2-deck ships.
+
+SB 0.996 "Half 2-deck ships == 1-deck ship => false":
+* Ready 50% algorithm for creating 2-deck ships.
