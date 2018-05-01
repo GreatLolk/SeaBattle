@@ -110,3 +110,6 @@ SB 0.995 "1-deck ships - good ships":
 
 SB 0.996 "Half 2-deck ships == 1-deck ship => false":
 * Ready 50% algorithm for creating 2-deck ships.
+
+SB 0.997 "Аll ingenious is simple":
+* Deleted algoritgm for creating ships for new more simply realisation.
