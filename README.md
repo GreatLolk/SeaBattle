@@ -113,3 +113,6 @@ SB 0.996 "Half 2-deck ships == 1-deck ship => false":
 
 SB 0.997 "Аll ingenious is simple":
 * Deleted algoritgm for creating ships for new more simply realisation.
+
+SB 0.998 "Honest random":
+* Ready 70% AIPreparation() method.
