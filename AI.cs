@@ -874,163 +874,163 @@ namespace SeaBattle
 
                 case 8:
                     // 1-deck ships
-                    points[1, 1].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[0].points[0], ref points[1, 1]);
-                    points[9, 0].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[1].points[0], ref points[9, 0]);
-                    points[2, 8].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[2].points[0], ref points[2, 8]);
-                    points[8, 9].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[3].points[0], ref points[8, 9]);
+                    points[6, 0].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[0].points[0], ref points[6, 0]);
+                    points[8, 0].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[1].points[0], ref points[8, 0]);
+                    points[8, 2].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[2].points[0], ref points[8, 2]);
+                    points[9, 1].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[3].points[0], ref points[9, 1]);
                     //
 
                     // 2-deck ships
-                    points[0, 7].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[4].points[0], ref points[0, 7]);
-                    points[0, 8].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[4].points[1], ref points[0, 8]);
-                    points[1, 4].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[5].points[0], ref points[1, 4]);
-                    points[2, 4].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[5].points[1], ref points[2, 4]);
-                    points[5, 0].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[6].points[0], ref points[5, 0]);
-                    points[6, 0].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[6].points[1], ref points[6, 0]);
+                    points[2, 6].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[4].points[0], ref points[2, 6]);
+                    points[2, 7].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[4].points[1], ref points[2, 7]);
+                    points[4, 4].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[5].points[0], ref points[4, 4]);
+                    points[4, 5].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[5].points[1], ref points[4, 5]);
+                    points[4, 7].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[6].points[0], ref points[4, 7]);
+                    points[5, 7].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[6].points[1], ref points[5, 7]);
                     //
 
                     // 3-deck ships
-                    points[4, 6].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[7].points[0], ref points[4, 6]);
-                    points[4, 7].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[7].points[1], ref points[4, 7]);
-                    points[4, 8].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[7].points[2], ref points[4, 8]);
-                    points[7, 6].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[8].points[0], ref points[7, 6]);
-                    points[8, 6].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[8].points[1], ref points[8, 6]);
-                    points[9, 6].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[8].points[2], ref points[9, 6]);
+                    points[2, 0].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[7].points[0], ref points[2, 0]);
+                    points[2, 1].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[7].points[1], ref points[2, 1]);
+                    points[2, 2].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[7].points[2], ref points[2, 2]);
+                    points[7, 5].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[8].points[0], ref points[7, 5]);
+                    points[8, 5].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[8].points[1], ref points[8, 5]);
+                    points[9, 5].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[8].points[2], ref points[9, 5]);
                     //
 
                     // 4-deck ship
-                    points[5, 2].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[9].points[0], ref points[5, 2]);
-                    points[6, 2].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[9].points[1], ref points[6, 2]);
-                    points[7, 2].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[9].points[2], ref points[7, 2]);
-                    points[8, 2].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[9].points[3], ref points[8, 2]);
+                    points[3, 9].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[9].points[0], ref points[3, 9]);
+                    points[4, 9].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[9].points[1], ref points[4, 9]);
+                    points[5, 9].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[9].points[2], ref points[5, 9]);
+                    points[6, 9].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[9].points[3], ref points[6, 9]);
                     //
                     break;
 
                 case 9:
                     // 1-deck ships
-                    points[1, 1].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[0].points[0], ref points[1, 1]);
+                    points[2, 6].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[0].points[0], ref points[2, 6]);
+                    points[4, 5].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[1].points[0], ref points[4, 5]);
+                    points[5, 7].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[2].points[0], ref points[5, 7]);
                     points[9, 0].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[1].points[0], ref points[9, 0]);
-                    points[2, 8].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[2].points[0], ref points[2, 8]);
-                    points[8, 9].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[3].points[0], ref points[8, 9]);
+                    RefOfShipsAndPoints(ref ships[3].points[0], ref points[9, 0]);
                     //
 
                     // 2-deck ships
-                    points[0, 7].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[4].points[0], ref points[0, 7]);
-                    points[0, 8].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[4].points[1], ref points[0, 8]);
+                    points[1, 3].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[4].points[0], ref points[1, 3]);
                     points[1, 4].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[5].points[0], ref points[1, 4]);
-                    points[2, 4].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[5].points[1], ref points[2, 4]);
-                    points[5, 0].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[6].points[0], ref points[5, 0]);
-                    points[6, 0].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[6].points[1], ref points[6, 0]);
+                    RefOfShipsAndPoints(ref ships[4].points[1], ref points[1, 4]);
+                    points[3, 2].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[5].points[0], ref points[3, 2]);
+                    points[3, 3].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[5].points[1], ref points[3, 3]);
+                    points[7, 7].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[6].points[0], ref points[7, 7]);
+                    points[8, 7].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[6].points[1], ref points[8, 7]);
                     //
 
                     // 3-deck ships
-                    points[4, 6].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[7].points[0], ref points[4, 6]);
-                    points[4, 7].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[7].points[1], ref points[4, 7]);
-                    points[4, 8].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[7].points[2], ref points[4, 8]);
-                    points[7, 6].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[8].points[0], ref points[7, 6]);
-                    points[8, 6].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[8].points[1], ref points[8, 6]);
-                    points[9, 6].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[8].points[2], ref points[9, 6]);
+                    points[0, 8].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[7].points[0], ref points[0, 8]);
+                    points[1, 8].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[7].points[1], ref points[1, 8]);
+                    points[2, 8].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[7].points[2], ref points[2, 8]);
+                    points[7, 9].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[8].points[0], ref points[7, 9]);
+                    points[8, 9].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[8].points[1], ref points[8, 9]);
+                    points[9, 9].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[8].points[2], ref points[9, 9]);
                     //
 
                     // 4-deck ship
-                    points[5, 2].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[9].points[0], ref points[5, 2]);
+                    points[6, 1].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[9].points[0], ref points[6, 1]);
                     points[6, 2].typeofpoint = 1;
                     RefOfShipsAndPoints(ref ships[9].points[1], ref points[6, 2]);
-                    points[7, 2].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[9].points[2], ref points[7, 2]);
-                    points[8, 2].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[9].points[3], ref points[8, 2]);
+                    points[6, 3].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[9].points[2], ref points[6, 3]);
+                    points[6, 4].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[9].points[3], ref points[6, 4]);
                     //
                     break;
 
                 case 10:
                     // 1-deck ships
-                    points[1, 1].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[0].points[0], ref points[1, 1]);
-                    points[9, 0].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[1].points[0], ref points[9, 0]);
-                    points[2, 8].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[2].points[0], ref points[2, 8]);
-                    points[8, 9].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[3].points[0], ref points[8, 9]);
+                    points[0, 6].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[0].points[0], ref points[0, 6]);
+                    points[5, 0].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[1].points[0], ref points[5, 0]);
+                    points[7, 0].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[2].points[0], ref points[7, 0]);
+                    points[8, 2].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[3].points[0], ref points[8, 2]);
                     //
 
                     // 2-deck ships
-                    points[0, 7].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[4].points[0], ref points[0, 7]);
-                    points[0, 8].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[4].points[1], ref points[0, 8]);
-                    points[1, 4].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[5].points[0], ref points[1, 4]);
-                    points[2, 4].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[5].points[1], ref points[2, 4]);
-                    points[5, 0].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[6].points[0], ref points[5, 0]);
-                    points[6, 0].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[6].points[1], ref points[6, 0]);
+                    points[3, 0].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[4].points[0], ref points[3, 0]);
+                    points[3, 1].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[4].points[1], ref points[3, 1]);
+                    points[8, 4].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[5].points[0], ref points[9, 4]);
+                    points[9, 4].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[5].points[1], ref points[0, 4]);
+                    points[1, 8].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[6].points[0], ref points[1, 8]);
+                    points[2, 8].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[6].points[1], ref points[2, 8]);
                     //
 
                     // 3-deck ships
-                    points[4, 6].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[7].points[0], ref points[4, 6]);
-                    points[4, 7].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[7].points[1], ref points[4, 7]);
-                    points[4, 8].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[7].points[2], ref points[4, 8]);
-                    points[7, 6].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[8].points[0], ref points[7, 6]);
-                    points[8, 6].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[8].points[1], ref points[8, 6]);
-                    points[9, 6].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[8].points[2], ref points[9, 6]);
+                    points[5, 9].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[7].points[0], ref points[5, 9]);
+                    points[6, 9].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[7].points[1], ref points[6, 9]);
+                    points[7, 9].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[7].points[2], ref points[7, 9]);
+                    points[5, 4].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[8].points[0], ref points[5, 4]);
+                    points[5, 5].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[8].points[1], ref points[5, 5]);
+                    points[5, 6].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[8].points[2], ref points[5, 6]);
                     //
 
                     // 4-deck ship
-                    points[5, 2].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[9].points[0], ref points[5, 2]);
-                    points[6, 2].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[9].points[1], ref points[6, 2]);
-                    points[7, 2].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[9].points[2], ref points[7, 2]);
-                    points[8, 2].typeofpoint = 1;
-                    RefOfShipsAndPoints(ref ships[9].points[3], ref points[8, 2]);
+                    points[1, 0].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[9].points[0], ref points[1, 0]);
+                    points[1, 1].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[9].points[1], ref points[1, 1]);
+                    points[1, 2].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[9].points[2], ref points[1, 2]);
+                    points[1, 3].typeofpoint = 1;
+                    RefOfShipsAndPoints(ref ships[9].points[3], ref points[1, 3]);
                     //
                     break;
             }
