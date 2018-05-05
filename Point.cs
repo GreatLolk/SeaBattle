@@ -14,7 +14,7 @@ namespace SeaBattle
             foreach (Point point in points)
             {
                 if (point.typeofpoint == 0)
-                    point.stringofpoint = "."; // Empty
+                    point.stringofpoint = "#"; // Empty
 
                 else if (point.typeofpoint == 1)
                     point.stringofpoint = "*"; // Ship
