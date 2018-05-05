@@ -116,3 +116,7 @@ SB 0.997 "Аll ingenious is simple":
 
 SB 0.998 "Honest random":
 * Ready 70% AIPreparation() method.
+
+SB 1.0 "Are you ready?":
+* Fixed and redesigned Render() method;
+* Ready AIPreparation() method.
